@@ -32,6 +32,11 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet" />
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/grid.css" />
@@ -145,7 +150,7 @@
         </section>
     </header>
 
-    <main style="height: 10000px">
+    <main>
         <!-- Clients -->
         <section class="client">
             <div class="container">
@@ -609,7 +614,218 @@
                 </div>
             </div>
         </section>
+
+        <!-- Question -->
+        <section class="question">
+            <div class="container">
+                <div class="question__inner">
+                    <h2 class="question__heading section--heading">A few questions <strong
+                            class="question__strong">clients normally ask me</strong></h2>
+
+                    <!-- Question lists -->
+                    <ul class="question__list">
+                        <li class="question__item">
+                            <input type="radio" name="question" id="question1" class="question__radio" />
+                            <label for="question1" class="question__label">
+                                <div class="question__item__wrap">
+                                    <h3 class="question__item__heading">What is your hourly rate?</h3>
+                                    <p class="question__item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                                </div>
+                                <div class="label__icon">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-minus"></i>
+                                </div>
+                            </label>
+                        </li>
+
+                        <li class="question__item">
+                            <input type="radio" name="question" id="question2" class="question__radio" />
+                            <label for="question2" class="question__label">
+                                <div class="question__item__wrap">
+                                    <h3 class="question__item__heading">What type of projects do you take on?</h3>
+                                    <p class="question__item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                                </div>
+                                <div class="label__icon">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-minus"></i>
+                                </div>
+                            </label>
+                        </li>
+
+                        <li class="question__item">
+                            <input type="radio" name="question" id="question3" class="question__radio" />
+                            <label for="question3" class="question__label">
+                                <div class="question__item__wrap">
+                                    <h3 class="question__item__heading">How do you charge for projects ?</h3>
+                                    <p class="question__item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                                </div>
+                                <div class="label__icon">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-minus"></i>
+                                </div>
+                            </label>
+                        </li>
+
+                        <li class="question__item">
+                            <input type="radio" name="question" id="question4" class="question__radio" />
+                            <label for="question4" class="question__label">
+                                <div class="question__item__wrap">
+                                    <h3 class="question__item__heading">What time-zone do you work in?</h3>
+                                    <p class="question__item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                                </div>
+                                <div class="label__icon">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-minus"></i>
+                                </div>
+                            </label>
+                        </li>
+
+                        <li class="question__item">
+                            <input type="radio" name="question" id="question5" class="question__radio" />
+                            <label for="question5" class="question__label">
+                                <div class="question__item__wrap">
+                                    <h3 class="question__item__heading">How often can we communicate?</h3>
+                                    <p class="question__item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                                </div>
+                                <div class="label__icon">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-minus"></i>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact__info">
+                        <h2 class="contact__info__heading section--heading">My atmosphere</h2>
+                        <p class="contact__info__desc section--desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                        <a href="mailto:interaction_arif" class="contact__info__mail">@interaction_arif</a>
+                    </div>
+                </div>
+
+                <!-- Row item -->
+                <div class="contact__item">
+                    <div class="row row-cols-lg-3 row-cols-1">
+                        <div class="col">
+                            <img src="./assets/img/contact-1.png" alt="contact-1" class="contact__item__img">
+                        </div>
+
+                        <div class="col">
+                            <img src="./assets/img/contact-2.png" alt="contact-2" class="contact__item__img">
+                        </div>
+
+                        <div class="col">
+                            <img src="./assets/img/contact-3.png" alt="contact-3" class="contact__item__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+            <div class="cta__inner">
+                <div class="row cta__content">
+                    <img src="./assets/img/cta-img.png" alt="Got a project? Let's talk" class="cta__img">
+                    <h2 class="cta__heading section--heading">Got a project? Let's talk</h2>
+                    <p class="cta__desc section--desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                    <a href="#!" class="cta__btn btn">Book a Call</a>
+                </div>
+
+                <!-- Decorators -->
+                <div class="decorators cta__decor cta__decor--1">
+                    <div class="decor decor--1"></div>
+                    <div class="decor decor--2"></div>
+                    <div class="decor--wrap">
+                        <div class="decor decor--3"></div>
+                        <div class="decor decor--4"></div>
+                    </div>
+                </div>
+
+                <div class="decorators cta__decor cta__decor--2">
+                    <div class="decor decor--1"></div>
+                    <div class="decor decor--2"></div>
+                    <div class="decor--wrap">
+                        <div class="decor decor--3"></div>
+                        <div class="decor decor--4"></div>
+                    </div>
+                </div>
+
+                <div class="decorators cta__decor cta__decor--3">
+                    <div class="decor decor--1"></div>
+                    <div class="decor decor--2"></div>
+                    <div class="decor--wrap">
+                        <div class="decor decor--3"></div>
+                        <div class="decor decor--4"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer__inner">
+            <div class="header__inner footer__container">
+                <!-- Header contact -->
+                <a href="mailto:hi@arif.interactive" class="header__inner__contact">
+                    <div class="header__contact__wrap">
+                        <figure class="header__contact__mail">
+                            <img src="./assets/img/header-mail.svg" alt="hi@arif.interactive"
+                                class="header__contact__img" />
+                        </figure>
+                        <span class="header__contact__text">hi@arif.interactive</span>
+                    </div>
+                </a>
+    
+                <!-- Header logo -->
+                <a href="#!" class="header__logo">
+                    <img src="./assets/img/logo.png" alt="hi@arif.interactive" class="header__logo__img" />
+                </a>
+    
+                <!-- Navbar -->
+                <nav class="header__navbar">
+                    <ul class="header__navbar__list">
+                        <li class="header__navbar__item">
+                            <a href="#projects" class="header__navbar__link">Projects</a>
+                        </li>
+                        <li class="header__navbar__item">
+                            <a href="#journey" class="header__navbar__link">Journey</a>
+                        </li>
+                        <li class="header__navbar__item">
+                            <a href="#service" class="header__navbar__link">Service</a>
+                        </li>
+                        <li class="header__navbar__item">
+                            <a href="#contact" class="header__navbar__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Footer separate -->
+            <div class="footer__separate"></div>
+            <!-- Footer copyright -->
+            <div class="footer__copyright">
+                <p class="footer__copyright__desc">©interactiveArif 2021. All rights reserved.</p>
+                <div class="footer__copyright__links">
+                    <a href="#!" class="footer__link">Privacy Policy</a>
+                    <a href="#!" class="footer__link">Terms of Conditions</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
