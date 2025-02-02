@@ -134,6 +134,14 @@ img {
 }
 
 /* ===== Header ===== */
+.header--fixed {
+    position: sticky;
+    top: -16px;
+    left: 0;
+    z-index: 2;
+    background-color: #fbfaffcc;
+}
+
 .header {
     padding-top: 43px;
     padding-bottom: 27px;
@@ -258,6 +266,27 @@ img {
     inset: auto 20% 0 20%;
     opacity: 1;
     visibility: visible;
+}
+
+.header__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid #5d3bee33;
+
+    transition: all 0.25s;
+}
+
+.header__icon:active {
+    background: #ddd;
+}
+
+.header__icon:active svg {
+    color: var(--primary-font-color);
 }
 
 /* ==== Hero ===== */
@@ -675,7 +704,7 @@ img {
 }
 
 .projects__card:hover {
-    scale: 1.1;
+    scale: 1;
 }
 
 .project__card__img {
@@ -964,7 +993,9 @@ img {
 
 .question__item {
     padding: 60px 0 33px 22px;
-    border-bottom: 3px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-font-color);
+
+    transition: border-color 0.25s;
 }
 
 .question__item:nth-child(1) {
@@ -1024,6 +1055,10 @@ img {
     display: block;
 }
 
+.question__item:has(.question__radio:checked) {
+    border-color: var(--primary-color);
+}
+
 .question__radio:checked + .question__label .question__item__heading {
     color: var(--primary-color);
 }
@@ -1074,6 +1109,12 @@ img {
     text-decoration-thickness: auto;
     text-underline-offset: auto;
     text-underline-position: from-font;
+
+    transition: all 0.25s;
+}
+
+.contact__info__mail:hover {
+    text-shadow: 1px 0 0 currentColor;
 }
 
 .contact__item__img {

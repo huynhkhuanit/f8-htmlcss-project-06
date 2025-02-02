@@ -56,17 +56,24 @@
                         <img src="./assets/img/header-mail.svg" alt="hi@arif.interactive"
                             class="header__contact__img" />
                     </figure>
-                    <span class="header__contact__text">hi@arif.interactive</span>
+                    <span class="header__contact__text hide-on-tablet">hi@arif.interactive</span>
                 </div>
             </a>
 
             <!-- Header logo -->
-            <a href="#!" class="header__logo">
+            <a href="#" class="header__logo">
                 <img src="./assets/img/logo.png" alt="hi@arif.interactive" class="header__logo__img" />
             </a>
 
+            <label for="menu-icon" class="hide-on-desktop header__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                        d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                </svg>
+            </label>
+
             <!-- Navbar -->
-            <nav class="header__navbar">
+            <nav class="hide-on-tablet header__navbar">
                 <ul class="header__navbar__list">
                     <li class="header__navbar__item">
                         <a href="#projects" class="header__navbar__link">Projects</a>
@@ -84,71 +91,110 @@
             </nav>
         </div>
 
-        <!-- Hero -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero__inner">
-                    <!-- Hero media -->
-                    <div class="hero__media">
-                        <figure class="hero__media__wrap">
-                            <img src="./assets/img/hero-1.png" alt="An Interactive Designer" class="hero__media__img" />
+        <!-- Tablet moible header -->
+        <div class="header__moible hide-on-desktop">
+            <input type="checkbox" name="" id="menu-icon" class="header__mobile__checkox" hidden>
+            <label for="menu-icon" class="header__mobile__overlay"></label>
+            <div class="header__mobile__drawer">
+                <!-- Header logo -->
+                <div class="header__mobile__wrap">
+                    <a href="#" class="header__mobile__logo header__logo">
+                        <img src="./assets/img/logo.png" alt="hi@arif.interactive"
+                            class="header__mobile__logo__img header__logo__img" />
+                    </a>
 
-                            <div class="decorators hero__media__decorators--large">
-                                <div class="decor decor--1"></div>
-                                <div class="decor decor--2"></div>
-                                <div class="decor--wrap">
-                                    <div class="decor decor--3"></div>
-                                    <div class="decor decor--4"></div>
-                                </div>
-                            </div>
-                        </figure>
-                    </div>
-
-                    <!-- Hero content -->
-                    <section class="hero__content">
-                        <h1 class="hero__content__heading">
-                            An Interactive Designer
-                        </h1>
-                        <p class="hero__content__desc">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. In urna, non nisl tincidunt ut
-                            elementum turpis.
-                        </p>
-                        <div class="hero__content__wrap">
-                            <a href="Book a Call" class="btn hero__content__btn">Book a Call</a>
-                            <a href="#!" class="hero__content__link">My Works</a>
-                        </div>
-
-                        <!-- Contact -->
-                        <div class="hero__content__contact">
-                            <span class="hero__contact__span">
-                                Follow me on:
-                            </span>
-                            <div class="hero__contact__socials">
-                                <a href="#!" class="hero__contact__link">
-                                    <img src="./assets/img/hero-socials-3.svg" alt="" class="hero__contact__img" />
-                                </a>
-                                <a href="#!" class="hero__contact__link">
-                                    <img src="./assets/img/hero-socials-2.svg" alt="" class="hero__contact__img" />
-                                </a>
-                                <a href="#!" class="hero__contact__link">
-                                    <img src="./assets/img/hero-socials-1.svg" alt="" class="hero__contact__img" />
-                                </a>
-                            </div>
-                        </div>
-                    </section>
+                    <a href="mailto:hi@arif.interactive"
+                        class="header__mobile__mail header__contact__text">hi@arif.interactive</a>
                 </div>
-                <div class="decorators hero__decor">
-                    <div class="decor decor--1"></div>
-                    <div class="decor decor--2"></div>
-                    <div class="decor--wrap">
-                        <div class="decor decor--3"></div>
-                        <div class="decor decor--4"></div>
+
+                <!-- Navbar -->
+                <nav class="header__navbar">
+                    <ul class="header__mobile__list header__navbar__list">
+                        <li class="header__navbar__item">
+                            <a href="#projects" class="header__mobile__link header__navbar__link">Projects</a>
+                        </li>
+                        <li class="header__navbar__item">
+                            <a href="#journey" class="header__mobile__link header__navbar__link">Journey</a>
+                        </li>
+                        <li class="header__navbar__item">
+                            <a href="#service" class="header__mobile__link header__navbar__link">Service</a>
+                        </li>
+                        <li class="header__navbar__item">
+                            <a href="#contact" class="header__mobile__link header__navbar__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Line -->
+    <div class="mobile-line hide-on-desktop"></div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero__container">
+            <div class="hero__inner">
+                <!-- Hero media -->
+                <div class="hero__media">
+                    <figure class="hero__media__wrap">
+                        <img src="./assets/img/hero-1.png" alt="An Interactive Designer" class="hero__media__img" />
+
+                        <div class="decorators hero__media__decorators--large">
+                            <div class="decor decor--1"></div>
+                            <div class="decor decor--2"></div>
+                            <div class="decor--wrap">
+                                <div class="decor decor--3"></div>
+                                <div class="decor decor--4"></div>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+
+                <!-- Hero content -->
+                <section class="hero__content">
+                    <h1 class="hero__content__heading">
+                        An Interactive Designer
+                    </h1>
+                    <p class="hero__content__desc">
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. In urna, non nisl tincidunt ut
+                        elementum turpis.
+                    </p>
+                    <div class="hero__content__wrap">
+                        <a href="#!" class="btn hero__content__btn">Book a Call</a>
+                        <a href="#!" class="hero__content__link">My Works</a>
                     </div>
+
+                    <!-- Contact -->
+                    <div class="hero__content__contact">
+                        <span class="hero__contact__span">
+                            Follow me on:
+                        </span>
+                        <div class="hero__contact__socials">
+                            <a href="#!" class="hero__contact__link">
+                                <img src="./assets/img/hero-socials-3.svg" alt="" class="hero__contact__img" />
+                            </a>
+                            <a href="#!" class="hero__contact__link">
+                                <img src="./assets/img/hero-socials-2.svg" alt="" class="hero__contact__img" />
+                            </a>
+                            <a href="#!" class="hero__contact__link">
+                                <img src="./assets/img/hero-socials-1.svg" alt="" class="hero__contact__img" />
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="decorators hero__decor hide-on-tablet">
+                <div class="decor decor--1"></div>
+                <div class="decor decor--2"></div>
+                <div class="decor--wrap">
+                    <div class="decor decor--3"></div>
+                    <div class="decor decor--4"></div>
                 </div>
             </div>
-        </section>
-    </header>
+        </div>
+    </section>
 
     <main>
         <!-- Clients -->
@@ -220,7 +266,7 @@
         </section>
 
         <!-- Specialities -->
-        <section class="services">
+        <section id="service" class="services">
             <div class="container">
                 <div class="services__inner">
                     <div class="services__row row">
@@ -354,8 +400,8 @@
         </section>
 
         <!-- Projects -->
-        <section class="projects">
-            <div class="container">
+        <section id="projects" class="projects">
+            <div class="container projects__container g-0">
                 <div class="projects__inner">
                     <!-- Project top -->
                     <div class="row projects__row">
@@ -378,16 +424,14 @@
                                 <!-- Project card info -->
                                 <div class="projects__card__info">
                                     <a href="#!" class="projects__card__cta"></a>
-                                    <div class="projects__card__info">
-                                        <h3 class="projects__card__title">
-                                            Wally Website
-                                        </h3>
-                                        <p class="projects__card__desc">
-                                            Lorem ipsum dolor am et,
-                                            consectetur adipiscing st elit.
-                                        </p>
-                                        <a href="#!" class="projects__card__link">Case Study</a>
-                                    </div>
+                                    <h3 class="projects__card__title">
+                                        Wally Website
+                                    </h3>
+                                    <p class="projects__card__desc">
+                                        Lorem ipsum dolor am et,
+                                        consectetur adipiscing st elit.
+                                    </p>
+                                    <a href="#!" class="projects__card__link">Case Study</a>
                                 </div>
                                 <img src="./assets/img/project-1.png" alt="" class="project__card__img" />
                             </div>
@@ -460,7 +504,7 @@
         </section>
 
         <!-- About -->
-        <section class="about">
+        <section id="journey" class="about">
             <div class="container">
                 <div class="about__inner">
                     <div class="about__top">
@@ -473,12 +517,12 @@
                         <!-- Rating Group -->
                         <div class="about__top__grp">
                             <div class="about__top__item">
-                                <h3 class="about__top__item__heading">08+</h3>
-                                <p class="about__top__item__desc">Years Experience</p>
-                            </div>
-                            <div class="about__top__item">
                                 <h3 class="about__top__item__heading">21+</h3>
                                 <p class="about__top__item__desc">Features & Awards</p>
+                            </div>
+                            <div class="about__top__item">
+                                <h3 class="about__top__item__heading">08+</h3>
+                                <p class="about__top__item__desc">Years Experience</p>
                             </div>
                             <div class="about__top__item">
                                 <h3 class="about__top__item__heading">97%</h3>
@@ -490,7 +534,7 @@
                     <!-- About video -->
                     <div class="about__video">
                         <button class="about__video__button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="111" height="111" viewBox="0 0 111 111"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="77" height="77" viewBox="0 0 111 111"
                                 fill="none">
                                 <g filter="url(#filter0_b_1_289)">
                                     <circle cx="55.5" cy="55.5" r="55.5" fill="white" fill-opacity="0.7" />
@@ -704,7 +748,7 @@
         </section>
 
         <!-- Contact -->
-        <section class="contact">
+        <section id="contact" class="contact">
             <div class="container">
                 <div class="row">
                     <div class="contact__info">
@@ -717,7 +761,7 @@
 
                 <!-- Row item -->
                 <div class="contact__item">
-                    <div class="row row-cols-lg-3 row-cols-1">
+                    <div class="row row-cols-lg-3 row-cols-md-3 row-cols-1">
                         <div class="col">
                             <img src="./assets/img/contact-1.png" alt="contact-1" class="contact__item__img">
                         </div>
@@ -731,6 +775,13 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Dots -->
+                <div class="show-on-mobile row dots hide-on-tablet hide-on-desktop">
+                    <div class="dot"></div>
+                    <div class="dot dot--active"></div>
+                    <div class="dot"></div>
+                </div>
             </div>
         </section>
 
@@ -740,7 +791,8 @@
                 <div class="row cta__content">
                     <img src="./assets/img/cta-img.png" alt="Got a project? Let's talk" class="cta__img">
                     <h2 class="cta__heading section--heading">Got a project? Let's talk</h2>
-                    <p class="cta__desc section--desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                    <p class="cta__desc section--desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna,
+                        non nisl tincidunt ut elementum turpis.</p>
                     <a href="#!" class="cta__btn btn">Book a Call</a>
                 </div>
 
@@ -754,7 +806,7 @@
                     </div>
                 </div>
 
-                <div class="decorators cta__decor cta__decor--2">
+                <div class="decorators cta__decor cta__decor--2 hide-on-tablet">
                     <div class="decor decor--1"></div>
                     <div class="decor decor--2"></div>
                     <div class="decor--wrap">
@@ -763,7 +815,7 @@
                     </div>
                 </div>
 
-                <div class="decorators cta__decor cta__decor--3">
+                <div class="decorators cta__decor cta__decor--3 hide-on-tablet">
                     <div class="decor decor--1"></div>
                     <div class="decor decor--2"></div>
                     <div class="decor--wrap">
@@ -782,33 +834,33 @@
                 <!-- Header contact -->
                 <a href="mailto:hi@arif.interactive" class="header__inner__contact">
                     <div class="header__contact__wrap">
-                        <figure class="header__contact__mail">
+                        <figure class="header__contact__mail footer__contact__mail">
                             <img src="./assets/img/header-mail.svg" alt="hi@arif.interactive"
-                                class="header__contact__img" />
+                                class="header__contact__img footer__contact__img" />
                         </figure>
                         <span class="header__contact__text">hi@arif.interactive</span>
                     </div>
                 </a>
-    
+
                 <!-- Header logo -->
-                <a href="#!" class="header__logo">
+                <a href="#" class="footer__logo header__logo">
                     <img src="./assets/img/logo.png" alt="hi@arif.interactive" class="header__logo__img" />
                 </a>
-    
+
                 <!-- Navbar -->
                 <nav class="header__navbar">
                     <ul class="header__navbar__list">
                         <li class="header__navbar__item">
-                            <a href="#projects" class="header__navbar__link">Projects</a>
+                            <a href="#projects" class="header__navbar__link footer__navbar__link">Projects</a>
                         </li>
                         <li class="header__navbar__item">
-                            <a href="#journey" class="header__navbar__link">Journey</a>
+                            <a href="#journey" class="header__navbar__link footer__navbar__link">Journey</a>
                         </li>
                         <li class="header__navbar__item">
-                            <a href="#service" class="header__navbar__link">Service</a>
+                            <a href="#service" class="header__navbar__link footer__navbar__link">Service</a>
                         </li>
                         <li class="header__navbar__item">
-                            <a href="#contact" class="header__navbar__link">Contact</a>
+                            <a href="#contact" class="header__navbar__link footer__navbar__link">Contact</a>
                         </li>
                     </ul>
                 </nav>

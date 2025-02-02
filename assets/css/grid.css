@@ -8,6 +8,7 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  width: min(1170px, 100% - 48px);
   padding-left: calc(var(--spacer) / 2);
   padding-right: calc(var(--spacer) / 2);
 }
